@@ -1,0 +1,17 @@
+Package: rk.dates
+Type: Package
+Title: An RKWard plugin package for transforming dates and times to
+        POSIX R format.
+Version: 0.0.1
+Date: 2025-11-16
+Author: Alfonso Cano Robles
+Maintainer: Alfonso Cano Robles <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: An RKWard plugin package for transforming dates and times
+        to POSIX R format.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.dates
+Authors@R: person(given="Alfonso", family="Cano Robles",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

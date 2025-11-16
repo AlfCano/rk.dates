@@ -1,0 +1,40 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="ConverttoRDateTime.js" />
+	<help file="ConverttoRDateTime.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Convert to R Date-Time (POSIXct)">
+		<row id="row_vSDOESPSSS">
+			<varselector id="var_selector" label="Select an object" />
+			<column id="clm_vDOESPSSSS">
+				<varslot id="input_vector" label="Data vector to convert" source="var_selector" required="true" />
+				<dropdown id="origin_format" label="Original format of the data">
+					<option label="Excel (numeric)" value="excel" checked="true" />
+					<option label="SPSS (numeric datetime)" value="spss" />
+					<option label="Stata (numeric datetime in milliseconds)" value="stata" />
+					<option label="SAS (numeric datetime)" value="sas" />
+					<option label="R numeric (seconds since 1970-01-01)" value="r_numeric" />
+					<option label="R character (e.g., '2025-11-21 15:30:00')" value="r_character" />
+					<option label="R Date object" value="r_date" />
+				</dropdown>
+				<saveobject label="Save result as" checkable="true" checked="true" initial="posix_dates" id="save_result" />
+				<preview label="Preview" id="prv_Preview" mode="data" />
+			</column>
+		</row>
+	</dialog>
+</document>

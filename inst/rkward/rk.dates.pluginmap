@@ -1,0 +1,72 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="ConverttoRDateTime"
+	id="ConverttoRDateTime_rkward"
+	po_id="ConverttoRDateTime_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.dates"
+		shortinfo="An RKWard plugin package for transforming dates and times to POSIX R format."
+		longinfo="An RKWard plugin package for transforming dates and times to POSIX R format."
+		version="0.0.1"
+		releasedate="2025-11-16"
+		url="https://github.com/AlfCano/rk.dates"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano Robles"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_ConverttoRDtTmCnvrttRDtTm"
+			label="Convert to R Date-Time"
+			type="standard"
+			file="plugins/ConverttoRDateTime.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="data"
+			label="Data"
+		>
+			<entry
+				component="cmp_ConverttoRDtTmCnvrttRDtTm"
+			/>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>
