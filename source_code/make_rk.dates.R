@@ -18,7 +18,7 @@ local({
     ),
     about = list(
       desc = "An RKWard plugin package for transforming dates and times to POSIX R format.",
-      version = "0.0.1",
+      version = "0.0.2", # Version updated as requested
       url = "https://github.com/AlfCano/rk.dates",
       license = "GPL (>= 3)"
     )
@@ -37,7 +37,6 @@ local({
     id.name = "input_vector"
   )
 
-  # CORRECTED: Dropdown now has distinct, accurate options for each format.
   origin_dropdown <- rk.XML.dropdown(
     label = "Original format of the data",
     id.name = "origin_format",
@@ -75,10 +74,18 @@ local({
   )
 
   # =========================================================================================
+  # --- NEW: Help File Definition ---
+  # =========================================================================================
+  dates_help <- rk.rkh.doc(
+    title = rk.rkh.title("Convert to R Date-Time (POSIXct)"),
+    summary = rk.rkh.summary("Converts a vector of date/time data from various common formats (like numeric values from Excel, SPSS, Stata, SAS, or R's own character/Date formats) into R's standard POSIXct date-time object.")
+  )
+
+
+  # =========================================================================================
   # JavaScript Logic
   # =========================================================================================
 
-  # CORRECTED: The switch statement now has accurate R code for each specific format.
   js_common_logic <- '
     var input_vec = getValue("input_vector");
     var origin_format = getValue("origin_format");
@@ -140,11 +147,14 @@ local({
       preview = js_preview,
       printout = js_printout
     ),
+    # --- MODIFIED: Added rkh section ---
+    rkh = list(help = dates_help),
     pluginmap = list(
       name = "Convert to R Date-Time",
       hierarchy = list("data")
     ),
-    create = c("pmap", "xml", "js", "desc", "about"),
+    # --- MODIFIED: Added "rkh" to create argument ---
+    create = c("pmap", "xml", "js", "desc", "about", "rkh"),
     load = TRUE,
     overwrite = TRUE,
     show = FALSE

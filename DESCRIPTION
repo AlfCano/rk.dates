@@ -2,8 +2,8 @@ Package: rk.dates
 Type: Package
 Title: An RKWard plugin package for transforming dates and times to
         POSIX R format.
-Version: 0.0.1
-Date: 2025-11-16
+Version: 0.0.2
+Date: 2025-11-17
 Author: Alfonso Cano Robles
 Maintainer: Alfonso Cano Robles <alfonso.cano@correo.buap.mx>
 Enhances: rkward

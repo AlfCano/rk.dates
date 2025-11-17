@@ -20,8 +20,8 @@
 		name="rk.dates"
 		shortinfo="An RKWard plugin package for transforming dates and times to POSIX R format."
 		longinfo="An RKWard plugin package for transforming dates and times to POSIX R format."
-		version="0.0.1"
-		releasedate="2025-11-16"
+		version="0.0.2"
+		releasedate="2025-11-17"
 		url="https://github.com/AlfCano/rk.dates"
 		license="GPL (&gt;= 3)"
 	>
