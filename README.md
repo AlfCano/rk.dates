@@ -1,7 +1,7 @@
 
 # rk.dates: An RKWard Plugin for Date/Time Conversion
 
-![Version](https://img.shields.io/badge/Version-0.0.1-blue.svg)
+![Version](https://img.shields.io/badge/Version-0.0.2-blue.svg)
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 This package provides a single, powerful RKWard plugin designed to convert various numeric and character representations of dates and times into R's standard `POSIXct` (date-time) format. It simplifies the often-tricky process of handling date/time data imported from other statistical software or sources.
