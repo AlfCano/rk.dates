@@ -1,8 +1,11 @@
 
 # rk.dates: An RKWard Plugin for Date/Time Conversion
 
-![Version](https://img.shields.io/badge/Version-0.0.2-blue.svg)
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![Version](https://img.shields.io/badge/Version-0.0.3-blue.svg)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+![RKWard](https://img.shields.io/badge/Platform-RKWard-green)
+[![R Linter](https://github.com/AlfCano/rk.dates/actions/workflows/lintr.yml/badge.svg)](https://github.com/AlfCano/rk.dates/actions/workflows/lintr.yml)
+![AI Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?logo=googlegemini&logoColor=white)
 
 This package provides a single, powerful RKWard plugin designed to convert various numeric and character representations of dates and times into R's standard `POSIXct` (date-time) format. It simplifies the often-tricky process of handling date/time data imported from other statistical software or sources.
 
@@ -20,6 +23,17 @@ The plugin provides a unified interface with the following capabilities, availab
     *   Handle standard, unambiguous character strings (e.g., "2025-11-21 15:30:00").
 *   **Interactive Data Preview**: A **Preview** button allows you to see the result of the conversion *before* you click "Submit," ensuring you have selected the correct origin format for your data.
 *   **User-Friendly Workflow**: A simple dropdown menu removes the need to remember the complex origin dates and time units (seconds vs. milliseconds) required for manual conversion in R code.
+
+## 🌍 Internationalization
+
+The interface is fully localized to match your RKWard language settings:
+
+*   🇺🇸 **English** (Default)
+*   🇪🇸 **Spanish** (`es`)
+*   🇫🇷 **French** (`fr`)
+*   🇩🇪 **German** (`de`)
+*   🇧🇷 **Portuguese** (Brazil) (`pt_BR`)    
+
 
 ## Installation
 

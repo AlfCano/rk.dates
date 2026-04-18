@@ -18,7 +18,7 @@ local({
     ),
     about = list(
       desc = "An RKWard plugin package for transforming dates and times to POSIX R format.",
-      version = "0.0.2", # Version updated as requested
+      version = "0.0.3", # Version updated for internationalizatin files.
       url = "https://github.com/AlfCano/rk.dates",
       license = "GPL (>= 3)"
     )
